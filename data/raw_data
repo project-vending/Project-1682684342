@@ -1,0 +1,14 @@
+
+import os
+
+folder_name = "data"
+file_name = "raw_data"
+
+if not os.path.exists(folder_name):
+    os.makedirs(folder_name)
+
+file_path = os.path.join(folder_name, file_name)
+
+if not os.path.exists(file_path):
+    with open(file_path, mode="w") as file:
+        pass  # create an empty file
