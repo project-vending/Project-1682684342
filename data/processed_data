@@ -1,0 +1,14 @@
+python
+import os
+
+# Define the directory and file paths
+data_dir = 'data'
+processed_data_file = 'processed_data'
+data_file_path = os.path.join(data_dir, processed_data_file)
+
+# Open and read the file contents
+with open(data_file_path, 'r') as f:
+    data = f.read()
+
+# Print the data
+print(data)
