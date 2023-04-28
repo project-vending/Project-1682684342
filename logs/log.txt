@@ -1,0 +1,8 @@
+python
+import os
+
+log_file_path = os.path.join('logs', 'log.txt')
+
+with open(log_file_path, 'w') as f:
+    f.write('This is a log file.\n')
+    f.write('It will contain information about the data engineering project.\n')
